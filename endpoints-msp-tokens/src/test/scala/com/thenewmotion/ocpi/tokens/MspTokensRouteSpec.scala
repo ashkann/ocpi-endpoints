@@ -86,7 +86,7 @@ class MspTokensRouteSpec extends Specification with Specs2RouteTest with Mockito
       visualNumber = Some("NL-TNM-066075-5"),
       issuer = "TheNewMotion",
       valid = true,
-      whitelist = WhitelistType.Allowed,
+      allowWhitelist = WhitelistType.Allowed,
       lastUpdated = DateTime.parse("2017-01-24T10:00:00.000Z")
     )
 

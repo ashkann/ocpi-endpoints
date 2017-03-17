@@ -28,7 +28,7 @@ object Tokens {
     visualNumber: Option[String] = None,
     issuer: String,
     valid: Boolean,
-    whitelist: WhitelistType,
+    allowWhitelist: WhitelistType,
     language: Option[String] = None,
     lastUpdated: DateTime
   ) {
@@ -42,7 +42,7 @@ object Tokens {
     visualNumber: Option[String] = None,
     issuer: Option[String] = None,
     valid: Option[Boolean] = None,
-    whitelist: Option[WhitelistType] = None,
+    allowWhitelist: Option[WhitelistType] = None,
     language: Option[String] = None,
     lastUpdated: Option[DateTime] = None
   ) {

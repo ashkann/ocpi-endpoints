@@ -69,7 +69,7 @@ class TokensClientSpec(implicit ee: ExecutionEnv) extends Specification with Fut
       visualNumber = None,
       issuer = "NewMotion",
       valid = true,
-      whitelist = WhitelistType.Allowed,
+      allowWhitelist = WhitelistType.Allowed,
       lastUpdated = DateTime.now
     )
 
@@ -95,7 +95,7 @@ class TokensClientSpec(implicit ee: ExecutionEnv) extends Specification with Fut
            |    "auth_id": "${testToken.authId}",
            |    "issuer": "${testToken.issuer}",
            |    "valid": ${testToken.valid},
-           |    "whitelist": "${testToken.whitelist}",
+           |    "allow_whitelist": "${testToken.allowWhitelist}",
            |    "last_updated" : "${testToken.lastUpdated}"
            |  }
            |}
